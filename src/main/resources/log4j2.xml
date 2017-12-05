@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Appenders>
+		<Console name="console-log" target="SYSTEM_OUT">
+			<PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %X{ID} %c{1} - %msg%n"/>
+		</Console>
+		<RollingFile name="apra-log" fileName="logs/apra.log" filePattern="apra-log-%d{yyyy-MM-dd}.log">
+			<PatternLayout>
+				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %X{ID} %c{1} - %msg%n</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+			</Policies>
+		</RollingFile>
+		<RollingFile name="error-log" fileName="logs/apra-error.log" filePattern="apra-error-%d{yyyy-MM-dd}.log">
+			<PatternLayout>
+				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %X{ID} %c{1} - %msg%n</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="gov.faa.ait.apra" level="info" additivity="false">
+			<AppenderRef ref="apra-log"/>
+		</Logger>
+		<Root level="info" additivity="true">
+			<AppenderRef ref="error-log" level="warn"/>
+			<AppenderRef ref="apra-log" level="info"/>
+		</Root>
+	</Loggers>
+</Configuration>

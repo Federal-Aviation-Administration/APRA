@@ -1,0 +1,69 @@
+{ 
+2   "version": "2.0.0", 
+3   "measurementType": { 
+4     "method": "projects" 
+5   }, 
+6   "agency": "USDOT", 
+7   "releases": [ 
+8     { 
+9       "name": "APRA", 
+10       "version": "1.2.0", 
+11       "organization": "FAA", 
+12       "description": "Aeronautic Product Release API (APRA) provides the private sector \
+greater access to core FAA data to spur more innovation in the aviation industry, \
+and ultimately advance the FAA’s mission of safety in flight.  Based on stakeholder \
+recommendations, this initiative’s first effort strived to provide both more data and \
+better data for Aeronautical products and information. Solution Delivery developed \
+and deployed web services for several aeronautical products including both information \
+about those products and the ability to automatically download those products which \
+satisfied one of the recommendations.", 
+13        
+14       "permissions": { 
+15         "licenses": [ 
+16         { 
+17           "URL": "https://creativecommons.org/publicdomain/zero/1.0/legalcode", 
+18           "name": "CC0" 
+19         } 
+20       ], 
+21         "usageType": "openSource", 
+22         "exemptionText": null 
+23       }, 
+24       "tags": [ 
+25         "platform", 
+26         "FAA", 
+27         "AIS", 
+28         "charts",
+           "aeronautic" 
+29       ], 
+30       "contact": { 
+31         "email": "edai-aero@faa.gov", 
+32         "name": "Jill Longenecker", 
+33         "URL": "http://www.faa.gov/got_data", 
+34         "phone": "907-271-1466" 
+35       }, 
+36       "status": "Production", 
+37       "vcs": "git", 
+38       "repositoryURL": "https://github.com/faa", 
+39       "homepageURL": "http://www.swaggerhub.com/apis/FAA/APRA", 
+40       "downloadURL": "", 
+         "disclaimerText" : "APRA is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.", 
+41       "languages": [ 
+42         "java", 
+43         "xml",
+		   "json" 
+44       ], 
+45       "laborHours": "0",   
+60       "partners": [ 
+61         { 
+62           "name": "Leidos Innovations LLC",
+             "email": "martin.hile@leidos.com" 
+64         } 
+65       ], 
+66       "date": { 
+67         "created": "2016-07-24", 
+68         "lastModified": "2017-12-01", 
+69         "metadataLastUpdated": "2017-12-01" 
+70       } 
+71     } 
+72   ] 
+73 } 
